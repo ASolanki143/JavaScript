@@ -107,7 +107,7 @@ let joined = arr.join('-')
 
 let rev = arr.reverse()
 console.log(arr , " :::: " , rev)
-// arr is [3,2,1]
+// [ 3, 2, 1 ]  ::::  [ 3, 2, 1 ]
 
 // 17.sort()
 // Sorts the elements of an array in place and returns the array.
@@ -139,4 +139,62 @@ let allPositive = arr.every( item => item > 0)
 let arr6 = [1, 2, [3, 4], [5, [6, 7]]];
 let flatArr = arr6.flat(Infinity);  // flatArr is [1, 2, 3, 4, 5, 6, 7]
 
+// 21. copyWithin()
+// The copyWithin() method in JavaScript is used to shallow copy a portion of an array to another location within the same array.
+// This method modifies the array in place (mutates the array), meaning it doesn't return a new array but updates the original one.
 
+// Syntax :
+// array.copyWithin(target, start, end)
+// target : The index at which to copy the elements.
+// start : The index from which to start copying the elements.
+// end : The index at which to stop copying the elements (not included).
+// If not specified, it defaults to the end of the array.
+
+// Example:
+let arr7 = [1, 2, 3, 4, 5];
+arr7.copyWithin(2, 0, 2);
+// arr7 is now [1, 2, 1, 2, 5]
+
+
+// Summary
+
+// Iteration Methods
+// 1. forEach() : Executes a function for each element in the array.
+// 2. map() : Returns a new array with transformed values.
+// 3. filter() : Returns a new array with elements that pass a test.
+// 4. reduce() : Reduces the array to a single value.
+// 5. some() : Checks if at least one element passes a test.
+// 6. every() : Checks if all elements pass a test.
+
+// Searching Methods
+// 7. find() : Returns the first element that passes a test.
+// 8. findIndex() : Returns the index of the first element that passes a test.
+// 9. indexOf() : Returns the index of the first occurrence of a value.
+// 10. includes() : Checks if an array contains a value.
+// 11. lastIndexOf() : Returns the index of the last occurrence of a value.
+
+// Modifying Arrays
+// 12. push() : Adds one or more elements to the end.
+// 13. pop() : Removes the last element.
+// 14. shift() : Removes the first element.
+// 15. unshift() : Adds one or more elements to the beginning.
+// 16. splice() : Adds or removes elements at a specified index.
+// 17. reverse() : Reverses the order of the elements.
+// 18. sort() : Sorts the elements of an array.
+// 19. fill() : Fills all elements with a static value.
+// 20. copyWithin() : Copies a sequence of elements within the array.
+
+// Creating / Combining Arrays
+// 21. concat() : Merges two or more arrays.
+// 22. join() : Joins all elements into a string.
+// 23. slice() : Returns a shallow copy of a portion of an array.
+// 24. flat() : Flattens nested arrays into a single array.
+// 25. flatMap() : Maps each element using a mapping function, then flattens the result into a new array.
+// [1, 2].flatMap(x => [x, x * 2]); // [1, 2, 2, 4]
+// 26. toSorted() : Returns a new sorted array without modifying the original.
+// 27. toReversed() : Returns a new array with elements in reverse order without modifying the original.
+
+// Utility Methods
+// 28. Array.isArray() : Checks if a value is an array.
+// 29. Array.from() : Creates a new array from an array-like or iterable object.
+// 30. Array.of() : Creates a new array with a variable number of arguments.

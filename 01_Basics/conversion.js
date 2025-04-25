@@ -36,6 +36,6 @@ console.log(+false) // 0
 console.log(":::::: Conversion with null and undefined ::::::")
 
 console.log(1 + null) // 1
-console.log(1 + undefined) // undefined
+console.log(1 + undefined) // NaN
 console.log(1 + null + "2") // "12"
 console.log(1 + null - "2") // -1

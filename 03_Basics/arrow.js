@@ -39,7 +39,7 @@ user.welcomeMessageArrow() // output : undefined , welcome to website
 const sum = (...args) => {
     return args.reduce((total, num) => total + num, 0);
 };
-  
+
 console.log(sum(1, 2, 3));  // Output: 6
 
 

@@ -6,7 +6,8 @@ const c = {};
 const o = { a, b, c };
 
 // In other words,
-console.log(o.a === {b}.b); // true
+console.log(o.a === {b}.b); // false
+console.log({b})
 
 // {b} => create a new object with property b ( b = 42 )
 // {b}.b => access the property of an object
@@ -24,10 +25,10 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+console.log(JsUser.email)
+console.log(JsUser["email"])
+console.log(JsUser["full name"])
+console.log(JsUser[mySym])
 
 JsUser.email = "hitesh@chatgpt.com"
 // Object.freeze(JsUser)

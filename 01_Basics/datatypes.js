@@ -37,3 +37,4 @@ const myFun = function(){
 
 //typeof array and object ===> object
 //typeof function ===> function
+

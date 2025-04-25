@@ -106,3 +106,4 @@ console.log(greeting);
 
 console.log(greeting.trim());
 // Expected output: "Hello world!";
+
